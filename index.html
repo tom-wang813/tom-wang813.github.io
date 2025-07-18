@@ -1,11 +1,205 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang Ziwei - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name h1 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        .language-switch button {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border: 1px solid #2c3e50;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-switch button:hover {
+            background: #2c3e50;
+            color: white;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .left-column {
+            text-align: center;
+        }
+
+        .photo-placeholder {
+            width: 300px;
+            height: 400px;
+            background-color: #f0f0f0;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .right-column h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .keywords {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .keywords li {
+            background: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .recent-work {
+            margin-top: 60px;
+        }
+
+        .recent-work h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .contact-info {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>欢迎来到我的主页！</h1>
-  <p>这是我用 GitHub Pages 搭建的第一个网站。</p>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>Wang Ziwei 王子威</h1>
+            </div>
+            <div class="language-switch">
+                <button>EN</button>
+                <button>中文</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="left-column">
+                <div class="photo-placeholder">
+                    [Your Photo Here]
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Google Scholar</a>
+                    <a href="#" target="_blank">ResearchGate</a>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <h2>Research Focus</h2>
+                <p>[Your research introduction here...]</p>
+                
+                <h3>Current Position</h3>
+                <p>[Your current academic position and university]</p>
+
+                <h3>Research Interests</h3>
+                <ul class="keywords">
+                    <li>[Research Area 1]</li>
+                    <li>[Research Area 2]</li>
+                    <li>[Research Area 3]</li>
+                </ul>
+
+                <h3>Education</h3>
+                <p>[Your educational background]</p>
+            </div>
+        </section>
+
+        <section class="recent-work">
+            <h2>Recent Research</h2>
+            <div class="research-items">
+                <!-- Research items will go here -->
+                <p>[Your recent research projects or publications]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: [Your Email]</p>
+            <p>Office: [Your Office Location]</p>
+        </div>
+    </footer>
 </body>
 </html>
